@@ -20,8 +20,11 @@ GPIO_TypeDef* leds_port[] = { GPIOD, GPIOD, GPIOD, GPIOD };
 /* Leds disponibles */
 const uint16_t leds[] = { LED_V, LED_R, LED_N, LED_A };
 
-extern void APP_ISR_sw(void);
-extern void APP_ISR_1ms(void);
+extern void APP_ISR_sw(void); //declaro la funcion pero le digo al compilador (mediante extern) que la funcion va a
+extern void APP_ISR_1ms(void); //estar definida en otro modulo.
+
+volatile uint16_t bsp_contMs = 0; //con volatile decimos que el contenido de la variable puede ser modificado en
+//cualquier momento desde el exterior de nuestro programa
 
 void led_on(uint8_t led) {
 	GPIO_SetBits(leds_port[led], leds[led]);
@@ -35,9 +38,14 @@ void led_toggle(uint8_t led) {
 	GPIO_ToggleBits(leds_port[led], leds[led]);
 }
 
-
 uint8_t sw_getState(void) {
 	return GPIO_ReadInputDataBit(GPIOA, BOTON);
+}
+
+void bsp_delayMs(uint16_t x) {
+	bsp_contMs = x;
+	while (bsp_contMs)
+		; //para que el compilador no nos interprete como que es un bucle infinito declaramos la variable como volatile
 }
 
 /**
@@ -62,6 +70,9 @@ void TIM2_IRQHandler(void) {
 	if (TIM_GetITStatus(TIM2, TIM_IT_Update) != RESET) {
 		TIM_ClearITPendingBit(TIM2, TIM_IT_Update);
 		APP_ISR_1ms();
+		if (bsp_contMs) {
+			bsp_contMs--;
+		}
 	}
 }
 
@@ -121,7 +132,8 @@ void bsp_sw_init() {
 	/* Configuro EXTI Line */
 	EXTI_InitStructure.EXTI_Line = EXTI_Line0;
 	EXTI_InitStructure.EXTI_Mode = EXTI_Mode_Interrupt;
-	EXTI_InitStructure.EXTI_Trigger = EXTI_Trigger_Rising;
+	//EXTI_InitStructure.EXTI_Trigger = EXTI_Trigger_Rising;
+	EXTI_InitStructure.EXTI_Trigger = EXTI_Trigger_Rising_Falling;
 	EXTI_InitStructure.EXTI_LineCmd = ENABLE;
 	EXTI_Init(&EXTI_InitStructure);
 
