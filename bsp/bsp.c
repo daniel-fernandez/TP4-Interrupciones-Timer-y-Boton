@@ -7,6 +7,8 @@
 #include "stm32f4xx_syscfg.h"	// configuraciones Generales
 #include "misc.h"				// Vectores de interrupciones (NVIC)
 #include "bsp.h"
+#include "LIS3DSH.h"
+
 
 #define LED_V GPIO_Pin_12
 #define LED_N GPIO_Pin_13
@@ -94,10 +96,32 @@ void bsp_pwm_config();
 void bsp_init() {
 	//bsp_led_init();
 	bsp_pwm_config();
+
 	bsp_sw_init();
 	bsp_timer_config();
 
+	LIS3DSH_Init();
+	LIS3DSH_Set_Output(0x47);
+
 }
+
+float bsp_get_acc(char eje){
+
+	switch(eje){
+	case 'x':
+	case 'X':
+		return LIS3DSH_Get_X_Out(LIS3DSH_Sense_2g);   //sense 2g es la sensibilidad que le damos al acelerometro
+	case 'y':
+	case 'Y':
+		return LIS3DSH_Get_Y_Out(LIS3DSH_Sense_2g);
+	case 'z':
+	case 'Z':
+		return LIS3DSH_Get_Z_Out(LIS3DSH_Sense_2g);
+	default:
+		return -999.9;
+	}
+}
+
 
 /**
  * @brief Inicializa Leds
