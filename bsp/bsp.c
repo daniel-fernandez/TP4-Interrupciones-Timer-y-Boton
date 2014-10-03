@@ -20,6 +20,10 @@ GPIO_TypeDef* leds_port[] = { GPIOD, GPIOD, GPIOD, GPIOD };
 /* Leds disponibles */
 const uint16_t leds[] = { LED_V, LED_R, LED_N, LED_A };
 
+uint32_t* const leds_pwm[] = { &TIM4->CCR1, &TIM4->CCR3, &TIM4->CCR2, &TIM4->CCR4 };
+//punteros a variables uint32, es una estructura constante, leds_pwm es un arreglo constante de tipo uint32,
+//y apuntamos a variables de tipo uint32.
+
 extern void APP_ISR_sw(void); //declaro la funcion pero le digo al compilador (mediante extern) que la funcion va a
 extern void APP_ISR_1ms(void); //estar definida en otro modulo.
 
@@ -40,6 +44,12 @@ void led_toggle(uint8_t led) {
 
 uint8_t sw_getState(void) {
 	return GPIO_ReadInputDataBit(GPIOA, BOTON);
+}
+
+void led_setBright(uint8_t led, uint8_t value) {
+
+	*leds_pwm[led] = 10000 * value / 100;
+
 }
 
 void bsp_delayMs(uint16_t x) {
@@ -79,9 +89,11 @@ void TIM2_IRQHandler(void) {
 void bsp_led_init();
 void bsp_sw_init();
 void bsp_timer_config();
+void bsp_pwm_config();
 
 void bsp_init() {
-	bsp_led_init();
+	//bsp_led_init();
+	bsp_pwm_config();
 	bsp_sw_init();
 	bsp_timer_config();
 
@@ -170,5 +182,73 @@ void bsp_timer_config(void) {
 	TIM_ITConfig(TIM2, TIM_IT_Update, ENABLE);
 	/* TIM2 contador habilitado */
 	TIM_Cmd(TIM2, ENABLE);
+
+}
+
+void bsp_pwm_config(void) {
+	TIM_TimeBaseInitTypeDef TIM_config;
+	GPIO_InitTypeDef GPIO_config;
+	TIM_OCInitTypeDef TIM_OC_config;
+
+	RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM4, ENABLE);
+
+	RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOD, ENABLE);
+
+	//
+	GPIO_config.GPIO_Mode = GPIO_Mode_AF;
+	GPIO_config.GPIO_OType = GPIO_OType_PP;
+	GPIO_config.GPIO_Pin = GPIO_Pin_15 | GPIO_Pin_14 | GPIO_Pin_13 | GPIO_Pin_12;
+	GPIO_config.GPIO_PuPd = GPIO_PuPd_UP;
+	GPIO_config.GPIO_Speed = GPIO_Speed_50MHz;
+
+	GPIO_Init(GPIOD, &GPIO_config);
+
+	//
+	GPIO_PinAFConfig(GPIOD, GPIO_PinSource15, GPIO_AF_TIM4);
+	GPIO_PinAFConfig(GPIOD, GPIO_PinSource14, GPIO_AF_TIM4);
+	GPIO_PinAFConfig(GPIOD, GPIO_PinSource13, GPIO_AF_TIM4);
+	GPIO_PinAFConfig(GPIOD, GPIO_PinSource12, GPIO_AF_TIM4);
+
+	//
+	TIM_config.TIM_ClockDivision = 0;
+	TIM_config.TIM_CounterMode = TIM_CounterMode_Up;
+	TIM_config.TIM_Period = 10000;
+	TIM_config.TIM_Prescaler = 16 - 1;
+	TIM_TimeBaseInit(TIM4, &TIM_config);
+
+	//
+	TIM_OC_config.TIM_OCMode = TIM_OCMode_PWM1;
+	TIM_OC_config.TIM_OutputState = TIM_OutputState_Enable;
+	TIM_OC_config.TIM_Pulse = 0;
+	TIM_OC_config.TIM_OCPolarity = TIM_OCPolarity_High;
+
+	// CH1 del pwm
+	TIM_OC1Init(TIM4, &TIM_OC_config);
+	TIM_OC1PreloadConfig(TIM4, TIM_OCPreload_Enable);
+
+	//CH2 del pwm
+	TIM_OC_config.TIM_OutputState = TIM_OutputState_Enable;
+	TIM_OC_config.TIM_Pulse = 0;
+
+	TIM_OC2Init(TIM4, &TIM_OC_config);
+	TIM_OC2PreloadConfig(TIM4, TIM_OCPreload_Enable);
+
+	//CH3 del pwm
+	TIM_OC_config.TIM_OutputState = TIM_OutputState_Enable;
+	TIM_OC_config.TIM_Pulse = 0;
+
+	TIM_OC3Init(TIM4, &TIM_OC_config);
+	TIM_OC3PreloadConfig(TIM4, TIM_OCPreload_Enable);
+
+	//CH4 del pwm
+	TIM_OC_config.TIM_OutputState = TIM_OutputState_Enable;
+	TIM_OC_config.TIM_Pulse = 0;
+
+	TIM_OC4Init(TIM4, &TIM_OC_config);
+	TIM_OC4PreloadConfig(TIM4, TIM_OCPreload_Enable);
+
+	TIM_ARRPreloadConfig(TIM4, ENABLE);
+
+	TIM_Cmd(TIM4, ENABLE);
 
 }
