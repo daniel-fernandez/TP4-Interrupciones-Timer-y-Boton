@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc noversion nomachine -mcpu=cortex-m4 -mthumb -Wall -ffunction-sections -g -O0 -c -DSTM32F401VC -DSTM32F4XX -DUSE_STDPERIPH_DRIVER -D__ASSEMBLY__ -ID:\Diplomatura en Sistemas Embebidos\diplomatura\clase 17\clase 15\TP4-Interrupciones-Timer-y-Boton\bsp -ID:\Diplomatura en Sistemas Embebidos\diplomatura\clase 17\clase 15\TP4-Interrupciones-Timer-y-Boton\cmsis -ID:\Diplomatura en Sistemas Embebidos\diplomatura\clase 17\clase 15\TP4-Interrupciones-Timer-y-Boton\cmsis_lib\include -ID:\Diplomatura en Sistemas Embebidos\diplomatura\clase 17\clase 15\TP4-Interrupciones-Timer-y-Boton\cmsis_lib -ID:\Diplomatura en Sistemas Embebidos\diplomatura\clase 17\clase 15 -ID:\Diplomatura en Sistemas Embebidos\diplomatura\clase 17\clase 15\TP4-Interrupciones-Timer-y-Boton -ID:\Diplomatura en Sistemas Embebidos\diplomatura\clase 17 -ID:\Diplomatura en Sistemas Embebidos\diplomatura\clase 17\clase 15\TP4-Interrupciones-Timer-y-Boton\cmsis_boot">
+      <target file="stm32f4xx_gpio.o" lastModified="148db92337b">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_gpio.c" lastModified="148ad32e960"/>
+      </target>
+      <target file="LIS3DSH_HW.o" lastModified="148dcb02c26">
+         <source file="..\..\..\LIS3DSH_HW.c" lastModified="148dcb026a9"/>
+      </target>
+      <target file="stm32f4xx_tim.o" lastModified="148db923708">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_tim.c" lastModified="148ad334ef0"/>
+      </target>
+      <target file="system_stm32f4xx.o" lastModified="148db9233e4">
+         <source file="..\..\..\cmsis_boot\system_stm32f4xx.c" lastModified="148ad32a310"/>
+      </target>
+      <target file="startup_stm32f4xx.o" lastModified="148db9231c7">
+         <source file="..\..\..\cmsis_boot\startup\startup_stm32f4xx.c" lastModified="148ad32a310"/>
+      </target>
+      <target file="stm32f4xx_syscfg.o" lastModified="148db923123">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_syscfg.c" lastModified="148ad33c420"/>
+      </target>
+      <target file="stm32f4xx_exti.o" lastModified="148db9235b8">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_exti.c" lastModified="148ad332fb0"/>
+      </target>
+      <target file="main.o" lastModified="148e69b2ff8">
+         <source file="..\..\..\main.c" lastModified="148e69b2731"/>
+      </target>
+      <target file="LIS3DSH.o" lastModified="148e60b2be3">
+         <source file="..\..\..\LIS3DSH.c" lastModified="148e23e6d2d"/>
+      </target>
+      <target file="stm32f4xx_spi.o" lastModified="148db923466">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_spi.c" lastModified="148d63f1720"/>
+      </target>
+      <target file="stm32f4xx_rcc.o" lastModified="148db923309">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_rcc.c" lastModified="148ad32aae0"/>
+      </target>
+      <target file="bsp.o" lastModified="148dd22c97b">
+         <source file="..\..\..\bsp\bsp.c" lastModified="148dd22c4d6"/>
+      </target>
+      <target file="misc.o" lastModified="148db923615">
+         <source file="..\..\..\cmsis_lib\source\misc.c" lastModified="148ad338d70"/>
+      </target>
+   </processor>
+</history>

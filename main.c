@@ -22,26 +22,46 @@ void pulsoLed(uint8_t led, uint32_t tiempo);
 int main(void) {
 	bsp_init();
 	int brillo = 0;
-	int flag = 0;
-	float acc_x;
+	int flag = 0, sw_flag = 1;
+	float acc_x, acc_y, acc_z, prender_x, prender_y;
 
 	while (1) {
-		bsp_delayMs(30);
+		//bsp_delayMs(30);
 
-		led_setBright(0, brillo);
-		led_setBright(1, brillo);
-		led_setBright(2, brillo);
-		led_setBright(3, brillo);
-		if (brillo >= 100)
-			flag = 0;
-		if (brillo <= 0)
-			flag = 1;
-		if (flag)
-			brillo++;
-		else
-			brillo--;
+		if (prender_x < 0) {
+			prender_x = prender_x * (-1);
+			brillo = prender_x;
+			led_setBright(0, brillo);
+		} else {
+			brillo = prender_x;
+			led_setBright(1, brillo);
+		}
+		if (prender_y < 0) {
+			prender_y = prender_y * (-1);
+			brillo = prender_y;
+			led_setBright(3, brillo);
+		} else {
+			brillo = prender_y;
+			led_setBright(2, brillo);
+		}
+		//	led_setBright(0, brillo);
+		//	led_setBright(1, brillo);
+		//	led_setBright(2, brillo);
+		//	led_setBright(3, brillo);
+		/*		if (brillo >= 100)
+		 flag = 0;
+		 if (brillo <= 0)
+		 flag = 1;
+		 if (flag)
+		 brillo++;
+		 else
+		 brillo--;*/
 
 		acc_x = bsp_get_acc('x');
+		acc_y = bsp_get_acc('y');
+
+		prender_x = acc_x * 100;
+		prender_y = acc_y * 100;
 
 	}
 }
