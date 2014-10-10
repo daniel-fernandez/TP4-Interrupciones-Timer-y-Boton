@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <dependencies>
-   <includePath signature="/ID:\Diplomatura en Sistemas Embebidos\diplomatura\clase 17\clase 15\TP4-Interrupciones-Timer-y-Boton\bsp /ID:\Diplomatura en Sistemas Embebidos\diplomatura\clase 17\clase 15\TP4-Interrupciones-Timer-y-Boton\cmsis /ID:\Diplomatura en Sistemas Embebidos\diplomatura\clase 17\clase 15\TP4-Interrupciones-Timer-y-Boton\cmsis_lib\include /ID:\Diplomatura en Sistemas Embebidos\diplomatura\clase 17\clase 15\TP4-Interrupciones-Timer-y-Boton\cmsis_lib /ID:\Diplomatura en Sistemas Embebidos\diplomatura\clase 17\clase 15 /ID:\Diplomatura en Sistemas Embebidos\diplomatura\clase 17\clase 15\TP4-Interrupciones-Timer-y-Boton /ID:\Diplomatura en Sistemas Embebidos\diplomatura\clase 17 /ID:\Diplomatura en Sistemas Embebidos\diplomatura\clase 17\clase 15\TP4-Interrupciones-Timer-y-Boton\cmsis_boot">
-      <source file="..\..\..\LIS3DSH_HW.h" lastModified="148dcaf2541">
+   <includePath signature="/I..\..\..\..\..\Documents and Settings\Administrator /I..\..\..\..\..\Documents and Settings\Administrator\Desktop\TP4-Interrupciones-Timer-y-Boton\cmsis_lib /I..\..\..\..\..\Documents and Settings\Administrator\Desktop\TP4-Interrupciones-Timer-y-Boton\bsp /I..\..\..\..\..\Documents and Settings\Administrator\Desktop\TP4-Interrupciones-Timer-y-Boton\cmsis /I..\..\..\..\..\Documents and Settings\Administrator\Desktop\TP4-Interrupciones-Timer-y-Boton\cmsis_lib\include /I..\..\..\..\..\Documents and Settings\Administrator\Desktop\TP4-Interrupciones-Timer-y-Boton /I..\..\..\..\..\Documents and Settings\Administrator\Desktop /I..\..\..\..\..\Documents and Settings\Administrator\Desktop\TP4-Interrupciones-Timer-y-Boton\cmsis_boot">
+      <source file="..\..\..\LIS3DSH_HW.h" lastModified="148dcaf2960">
       </source>
       <source file="..\..\..\cmsis_lib\include\stm32f4xx_syscfg.h" lastModified="148ad33c420">
          <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
@@ -13,16 +13,14 @@
          <include file="..\..\..\cmsis\core_cmFunc.h"/>
          <include file="..\..\..\cmsis\core_cm4_simd.h"/>
       </source>
-      <source file="..\..\..\LIS3DSH_HW.c" lastModified="148dcb026a9">
-      </source>
-      <source file="..\..\..\LIS3DSH.h" lastModified="148dcb026dc">
+      <source file="..\..\..\LIS3DSH.h" lastModified="148dcb02b30">
          <include file="..\..\..\LIS3DSH_HW.h"/>
       </source>
       <source file="..\..\..\cmsis_lib\source\stm32f4xx_syscfg.c" lastModified="148ad33c420">
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_syscfg.h"/>
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
       </source>
-      <source file="..\..\..\LIS3DSH.c" lastModified="148e23e6d2d">
+      <source file="..\..\..\LIS3DSH.c" lastModified="148e23e70c0">
          <include file="..\..\..\LIS3DSH.h"/>
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_spi.h"/>
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
@@ -43,12 +41,16 @@
       <source file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h" lastModified="148ad32e960">
          <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
       </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_adc.c" lastModified="148f51d6f20">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_adc.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
       <source file="..\..\..\cmsis_lib\include\misc.h" lastModified="148ad338d70">
          <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
       </source>
-      <source file="..\..\..\bsp\bsp.h" lastModified="148dcc45267">
+      <source file="..\..\..\bsp\bsp.h" lastModified="148fa0478c6">
       </source>
-      <source file="..\..\..\bsp\bsp.c" lastModified="148dd22c8be">
+      <source file="..\..\..\bsp\bsp.c" lastModified="148fa047c70">
          <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h"/>
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
@@ -58,6 +60,7 @@
          <include file="..\..\..\cmsis_lib\include\misc.h"/>
          <include file="..\..\..\bsp\bsp.h"/>
          <include file="..\..\..\LIS3DSH.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_adc.h"/>
       </source>
       <source file="..\..\..\cmsis_boot\stm32f4xx_conf.h" lastModified="148ad32e960">
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_exti.h"/>
@@ -72,6 +75,9 @@
          <include file="..\..\..\cmsis\core_cm4.h"/>
          <include file="..\..\..\cmsis_boot\system_stm32f4xx.h"/>
          <include file="..\..\..\cmsis_boot\stm32f4xx_conf.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_adc.h" lastModified="148f51d6f20">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
       </source>
       <source file="..\..\..\cmsis_lib\include\stm32f4xx_tim.h" lastModified="148ad334ef0">
          <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
@@ -101,221 +107,6 @@
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_exti.h"/>
       </source>
       <source file="..\..\..\cmsis\core_cm4_simd.h" lastModified="148ad32a310">
-      </source>
-      <source file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h" lastModified="148ad32aae0">
-         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
-      </source>
-   </includePath>
-   <includePath signature="/I..\..\..\..\..\Documents and Settings\Administrator\Desktop\clase 17\clase 15\TP4-Interrupciones-Timer-y-Boton\cmsis /I..\..\..\..\..\Documents and Settings\Administrator\Desktop\clase 17\clase 15\TP4-Interrupciones-Timer-y-Boton\cmsis_lib /I..\..\..\..\..\Documents and Settings\Administrator\Desktop\clase 17\clase 15\TP4-Interrupciones-Timer-y-Boton\bsp /I..\..\..\..\..\Documents and Settings\Administrator\Desktop\clase 17\clase 15 /I..\..\..\..\..\Documents and Settings\Administrator\Desktop\clase 17\clase 15\TP4-Interrupciones-Timer-y-Boton\cmsis_boot /I..\..\..\..\..\Documents and Settings\Administrator\Desktop\clase 17\clase 15\TP4-Interrupciones-Timer-y-Boton\cmsis_lib\include /I..\..\..\..\..\Documents and Settings\Administrator\Desktop\clase 17\clase 15\TP4-Interrupciones-Timer-y-Boton">
-      <source file="..\..\..\cmsis_lib\include\stm32f4xx_syscfg.h" lastModified="148ad33c420">
-         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
-      </source>
-      <source file="..\..\..\cmsis_lib\source\stm32f4xx_syscfg.c" lastModified="148ad33c420">
-         <include file="..\..\..\cmsis_lib\include\stm32f4xx_syscfg.h"/>
-         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
-      </source>
-      <source file="..\..\..\cmsis_boot\system_stm32f4xx.h" lastModified="148ad32a310">
-      </source>
-      <source file="..\..\..\cmsis_boot\system_stm32f4xx.c" lastModified="148ad32a310">
-         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
-      </source>
-      <source file="..\..\..\cmsis_lib\include\stm32f4xx_exti.h" lastModified="148ad332fb0">
-         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
-      </source>
-      <source file="..\..\..\cmsis_lib\source\stm32f4xx_tim.c" lastModified="148ad334ef0">
-         <include file="..\..\..\cmsis_lib\include\stm32f4xx_tim.h"/>
-         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
-      </source>
-      <source file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h" lastModified="148ad32e960">
-         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
-      </source>
-      <source file="..\..\..\cmsis_lib\include\misc.h" lastModified="148ad338d70">
-         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
-      </source>
-      <source file="..\..\..\cmsis_lib\include\stm32f4xx_tim.h" lastModified="148ad334ef0">
-         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
-      </source>
-      <source file="..\..\..\cmsis_lib\source\misc.c" lastModified="148ad338d70">
-         <include file="..\..\..\cmsis_lib\include\misc.h"/>
-      </source>
-      <source file="..\..\..\cmsis_lib\source\stm32f4xx_rcc.c" lastModified="148ad32aae0">
-         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
-      </source>
-      <source file="..\..\..\cmsis_boot\startup\startup_stm32f4xx.c" lastModified="148ad32a310">
-      </source>
-      <source file="..\..\..\cmsis_lib\source\stm32f4xx_gpio.c" lastModified="148ad32e960">
-         <include file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h"/>
-         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
-      </source>
-      <source file="..\..\..\cmsis_lib\source\stm32f4xx_exti.c" lastModified="148ad332fb0">
-         <include file="..\..\..\cmsis_lib\include\stm32f4xx_exti.h"/>
-      </source>
-      <source file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h" lastModified="148ad32aae0">
-         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
-      </source>
-   </includePath>
-   <includePath signature="/I..\..\..\..\..\Documents and Settings\Administrator\Desktop\clase 15\TP4-Interrupciones-Timer-y-Boton\cmsis_boot /I..\..\..\..\..\Documents and Settings\Administrator\Desktop\clase 15\TP4-Interrupciones-Timer-y-Boton /I..\..\..\..\..\Documents and Settings\Administrator\Desktop\clase 15\TP4-Interrupciones-Timer-y-Boton\cmsis /I..\..\..\..\..\Documents and Settings\Administrator\Desktop\clase 15\TP4-Interrupciones-Timer-y-Boton\bsp /I..\..\..\..\..\Documents and Settings\Administrator\Desktop\clase 15 /I..\..\..\..\..\Documents and Settings\Administrator\Desktop\clase 15\TP4-Interrupciones-Timer-y-Boton\cmsis_lib /I..\..\..\..\..\Documents and Settings\Administrator\Desktop\clase 15\TP4-Interrupciones-Timer-y-Boton\cmsis_lib\include">
-      <source file="..\..\..\cmsis_lib\include\stm32f4xx_syscfg.h" lastModified="148ad33c24b">
-         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
-      </source>
-      <source file="..\..\..\cmsis_lib\source\stm32f4xx_syscfg.c" lastModified="148ad33c24b">
-         <include file="..\..\..\cmsis_lib\include\stm32f4xx_syscfg.h"/>
-         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
-      </source>
-      <source file="..\..\..\cmsis_boot\system_stm32f4xx.h" lastModified="148ad32a310">
-      </source>
-      <source file="..\..\..\cmsis_boot\system_stm32f4xx.c" lastModified="148ad32a310">
-         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
-      </source>
-      <source file="..\..\..\cmsis_lib\include\stm32f4xx_exti.h" lastModified="148ad332fb0">
-         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
-      </source>
-      <source file="..\..\..\cmsis_lib\source\stm32f4xx_tim.c" lastModified="148ad334ef0">
-         <include file="..\..\..\cmsis_lib\include\stm32f4xx_tim.h"/>
-         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
-      </source>
-      <source file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h" lastModified="148ad32e960">
-         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
-      </source>
-      <source file="..\..\..\cmsis_lib\include\misc.h" lastModified="148ad338d70">
-         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
-      </source>
-      <source file="..\..\..\cmsis_lib\include\stm32f4xx_tim.h" lastModified="148ad334ef0">
-         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
-      </source>
-      <source file="..\..\..\cmsis_lib\source\misc.c" lastModified="148ad338d70">
-         <include file="..\..\..\cmsis_lib\include\misc.h"/>
-      </source>
-      <source file="..\..\..\cmsis_lib\source\stm32f4xx_rcc.c" lastModified="148ad32aae0">
-         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
-      </source>
-      <source file="..\..\..\cmsis_boot\startup\startup_stm32f4xx.c" lastModified="148ad32a310">
-      </source>
-      <source file="..\..\..\cmsis_lib\source\stm32f4xx_gpio.c" lastModified="148ad32e960">
-         <include file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h"/>
-         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
-      </source>
-      <source file="..\..\..\cmsis_lib\source\stm32f4xx_exti.c" lastModified="148ad332fb0">
-         <include file="..\..\..\cmsis_lib\include\stm32f4xx_exti.h"/>
-      </source>
-      <source file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h" lastModified="148ad32aae0">
-         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
-      </source>
-   </includePath>
-   <includePath signature="/IF:\diplomatura\clase 15\TP4-Interrupciones-Timer-y-Boton\bsp /IF:\diplomatura\clase 15\TP4-Interrupciones-Timer-y-Boton\cmsis_lib /IF:\diplomatura\clase 15\TP4-Interrupciones-Timer-y-Boton /IF:\diplomatura\clase 15\TP4-Interrupciones-Timer-y-Boton\cmsis /IF:\diplomatura\clase 15\TP4-Interrupciones-Timer-y-Boton\cmsis_lib\include /IF:\diplomatura\clase 15 /IF:\diplomatura\clase 15\TP4-Interrupciones-Timer-y-Boton\cmsis_boot">
-      <source file="..\..\..\cmsis_lib\include\stm32f4xx_syscfg.h" lastModified="148ad33c24b">
-         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
-      </source>
-      <source file="..\..\..\cmsis_lib\source\stm32f4xx_syscfg.c" lastModified="148ad33c24b">
-         <include file="..\..\..\cmsis_lib\include\stm32f4xx_syscfg.h"/>
-         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
-      </source>
-   </includePath>
-   <includePath signature="/ID:\Diplomatura en Sistemas Embebidos\diplomatura\clase 15\TP4-Interrupciones-Timer-y-Boton\cmsis /ID:\Diplomatura en Sistemas Embebidos\diplomatura\clase 15 /ID:\Diplomatura en Sistemas Embebidos\diplomatura\clase 15\TP4-Interrupciones-Timer-y-Boton\cmsis_lib\include /ID:\Diplomatura en Sistemas Embebidos\diplomatura\clase 15\TP4-Interrupciones-Timer-y-Boton\cmsis_boot /ID:\Diplomatura en Sistemas Embebidos\diplomatura\clase 15\TP4-Interrupciones-Timer-y-Boton\bsp /ID:\Diplomatura en Sistemas Embebidos\diplomatura\clase 15\TP4-Interrupciones-Timer-y-Boton /ID:\Diplomatura en Sistemas Embebidos\diplomatura\clase 15\TP4-Interrupciones-Timer-y-Boton\cmsis_lib">
-      <source file="..\..\..\cmsis_lib\include\stm32f4xx_syscfg.h" lastModified="148ad33c24b">
-         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
-      </source>
-      <source file="..\..\..\cmsis_lib\source\stm32f4xx_syscfg.c" lastModified="148ad33c24b">
-         <include file="..\..\..\cmsis_lib\include\stm32f4xx_syscfg.h"/>
-         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
-      </source>
-      <source file="..\..\..\cmsis_boot\stm32f4xx.h" lastModified="148ad32a40a">
-         <include file="..\..\..\cmsis\core_cm4.h"/>
-         <include file="..\..\..\cmsis_boot\system_stm32f4xx.h"/>
-         <include file="..\..\..\cmsis_boot\stm32f4xx_conf.h"/>
-      </source>
-   </includePath>
-   <includePath signature="/IG:\diplomatura\clase 17\clase 15\TP4-Interrupciones-Timer-y-Boton\bsp /IG:\diplomatura\clase 17\clase 15 /IG:\diplomatura\clase 17\clase 15\TP4-Interrupciones-Timer-y-Boton /IG:\diplomatura\clase 17\clase 15\TP4-Interrupciones-Timer-y-Boton\cmsis_lib /IG:\diplomatura\clase 17\clase 15\TP4-Interrupciones-Timer-y-Boton\cmsis_lib\include /IG:\diplomatura\clase 17\clase 15\TP4-Interrupciones-Timer-y-Boton\cmsis /IG:\diplomatura\clase 17\clase 15\TP4-Interrupciones-Timer-y-Boton\cmsis_boot">
-      <source file="..\..\..\cmsis_lib\include\stm32f4xx_syscfg.h" lastModified="148ad33c420">
-         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
-      </source>
-      <source file="..\..\..\cmsis_lib\source\stm32f4xx_syscfg.c" lastModified="148ad33c420">
-         <include file="..\..\..\cmsis_lib\include\stm32f4xx_syscfg.h"/>
-         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
-      </source>
-      <source file="..\..\..\cmsis_boot\system_stm32f4xx.h" lastModified="148ad32a310">
-      </source>
-      <source file="..\..\..\cmsis_boot\system_stm32f4xx.c" lastModified="148ad32a310">
-         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
-      </source>
-      <source file="..\..\..\cmsis_lib\include\stm32f4xx_exti.h" lastModified="148ad332fb0">
-         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
-      </source>
-      <source file="..\..\..\cmsis_lib\source\stm32f4xx_tim.c" lastModified="148ad334ef0">
-         <include file="..\..\..\cmsis_lib\include\stm32f4xx_tim.h"/>
-         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
-      </source>
-      <source file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h" lastModified="148ad32e960">
-         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
-      </source>
-      <source file="..\..\..\cmsis_lib\include\misc.h" lastModified="148ad338d70">
-         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
-      </source>
-      <source file="..\..\..\cmsis_lib\include\stm32f4xx_tim.h" lastModified="148ad334ef0">
-         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
-      </source>
-      <source file="..\..\..\cmsis_lib\source\misc.c" lastModified="148ad338d70">
-         <include file="..\..\..\cmsis_lib\include\misc.h"/>
-      </source>
-      <source file="..\..\..\cmsis_lib\source\stm32f4xx_rcc.c" lastModified="148ad32aae0">
-         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
-      </source>
-      <source file="..\..\..\cmsis_boot\startup\startup_stm32f4xx.c" lastModified="148ad32a310">
-      </source>
-      <source file="..\..\..\cmsis_lib\source\stm32f4xx_gpio.c" lastModified="148ad32e960">
-         <include file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h"/>
-         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
-      </source>
-      <source file="..\..\..\cmsis_lib\source\stm32f4xx_exti.c" lastModified="148ad332fb0">
-         <include file="..\..\..\cmsis_lib\include\stm32f4xx_exti.h"/>
-      </source>
-      <source file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h" lastModified="148ad32aae0">
-         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
-      </source>
-   </includePath>
-   <includePath signature="/I..\..\..\..\..\Documents and Settings\Administrator\Desktop\clase 17\clase 15\TP4-Interrupciones-Timer-y-Boton\cmsis /I..\..\..\..\..\Documents and Settings\Administrator\Desktop\clase 17\clase 15\TP4-Interrupciones-Timer-y-Boton\cmsis_lib /I..\..\..\..\..\Documents and Settings\Administrator\Desktop\clase 17\clase 15\TP4-Interrupciones-Timer-y-Boton\bsp /I..\..\..\..\..\Documents and Settings\Administrator\Desktop\clase 17 /I..\..\..\..\..\Documents and Settings\Administrator\Desktop\clase 17\clase 15 /I..\..\..\..\..\Documents and Settings\Administrator\Desktop\clase 17\clase 15\TP4-Interrupciones-Timer-y-Boton\cmsis_boot /I..\..\..\..\..\Documents and Settings\Administrator\Desktop\clase 17\clase 15\TP4-Interrupciones-Timer-y-Boton\cmsis_lib\include /I..\..\..\..\..\Documents and Settings\Administrator\Desktop\clase 17\clase 15\TP4-Interrupciones-Timer-y-Boton">
-      <source file="..\..\..\cmsis_lib\include\stm32f4xx_syscfg.h" lastModified="148ad33c420">
-         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
-      </source>
-      <source file="..\..\..\cmsis_lib\source\stm32f4xx_syscfg.c" lastModified="148ad33c420">
-         <include file="..\..\..\cmsis_lib\include\stm32f4xx_syscfg.h"/>
-         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
-      </source>
-      <source file="..\..\..\cmsis_boot\system_stm32f4xx.h" lastModified="148ad32a310">
-      </source>
-      <source file="..\..\..\cmsis_boot\system_stm32f4xx.c" lastModified="148ad32a310">
-         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
-      </source>
-      <source file="..\..\..\cmsis_lib\include\stm32f4xx_exti.h" lastModified="148ad332fb0">
-         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
-      </source>
-      <source file="..\..\..\cmsis_lib\source\stm32f4xx_tim.c" lastModified="148ad334ef0">
-         <include file="..\..\..\cmsis_lib\include\stm32f4xx_tim.h"/>
-         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
-      </source>
-      <source file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h" lastModified="148ad32e960">
-         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
-      </source>
-      <source file="..\..\..\cmsis_lib\include\misc.h" lastModified="148ad338d70">
-         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
-      </source>
-      <source file="..\..\..\cmsis_lib\include\stm32f4xx_tim.h" lastModified="148ad334ef0">
-         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
-      </source>
-      <source file="..\..\..\cmsis_lib\source\misc.c" lastModified="148ad338d70">
-         <include file="..\..\..\cmsis_lib\include\misc.h"/>
-      </source>
-      <source file="..\..\..\cmsis_lib\source\stm32f4xx_rcc.c" lastModified="148ad32aae0">
-         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
-      </source>
-      <source file="..\..\..\cmsis_boot\startup\startup_stm32f4xx.c" lastModified="148ad32a310">
-      </source>
-      <source file="..\..\..\cmsis_lib\source\stm32f4xx_gpio.c" lastModified="148ad32e960">
-         <include file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h"/>
-         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
-      </source>
-      <source file="..\..\..\cmsis_lib\source\stm32f4xx_exti.c" lastModified="148ad332fb0">
-         <include file="..\..\..\cmsis_lib\include\stm32f4xx_exti.h"/>
       </source>
       <source file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h" lastModified="148ad32aae0">
          <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>

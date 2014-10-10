@@ -16,31 +16,21 @@
 <part id="0"/>
 <part id="1"/>
 <part id="2"/>
-<part id="3"/>
-<part id="4"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" partName="main.c" path="D:/Diplomatura en Sistemas Embebidos/diplomatura/clase 17/clase 15/TP4-Interrupciones-Timer-y-Boton/main.c" title="main.c" tooltip="D:/Diplomatura en Sistemas Embebidos/diplomatura/clase 17/clase 15/TP4-Interrupciones-Timer-y-Boton/main.c" workbook="DefaultEditorWorkbook">
+<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" partName="main.c" path="H:/diplomatura/clase 17/clase 15/TP4-Interrupciones-Timer-y-Boton/main.c" title="main.c" tooltip="H:/diplomatura/clase 17/clase 15/TP4-Interrupciones-Timer-y-Boton/main.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/TP4-Interrupciones-Timer-y-Boton/main.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="36" selectionTopPixel="0"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1474" selectionTopPixel="807"/>
 </editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="bsp.h" partName="bsp.h" path="D:/Diplomatura en Sistemas Embebidos/diplomatura/clase 17/clase 15/TP4-Interrupciones-Timer-y-Boton/bsp/bsp.h" title="bsp.h" tooltip="D:/Diplomatura en Sistemas Embebidos/diplomatura/clase 17/clase 15/TP4-Interrupciones-Timer-y-Boton/bsp/bsp.h" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/TP4-Interrupciones-Timer-y-Boton/bsp/bsp.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="312"/>
-</editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="bsp.c" partName="bsp.c" path="D:/Diplomatura en Sistemas Embebidos/diplomatura/clase 17/clase 15/TP4-Interrupciones-Timer-y-Boton/bsp/bsp.c" title="bsp.c" tooltip="D:/Diplomatura en Sistemas Embebidos/diplomatura/clase 17/clase 15/TP4-Interrupciones-Timer-y-Boton/bsp/bsp.c" workbook="DefaultEditorWorkbook">
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="bsp.c" partName="bsp.c" path="C:/Documents and Settings/Administrator/Desktop/TP4-Interrupciones-Timer-y-Boton/bsp/bsp.c" title="bsp.c" tooltip="C:/Documents and Settings/Administrator/Desktop/TP4-Interrupciones-Timer-y-Boton/bsp/bsp.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/TP4-Interrupciones-Timer-y-Boton/bsp/bsp.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="465" selectionTopPixel="1530"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="2340"/>
 </editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="LIS3DSH.c" partName="LIS3DSH.c" path="D:/Diplomatura en Sistemas Embebidos/diplomatura/clase 17/clase 15/TP4-Interrupciones-Timer-y-Boton/LIS3DSH.c" title="LIS3DSH.c" tooltip="D:/Diplomatura en Sistemas Embebidos/diplomatura/clase 17/clase 15/TP4-Interrupciones-Timer-y-Boton/LIS3DSH.c" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/TP4-Interrupciones-Timer-y-Boton/LIS3DSH.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3572" selectionTopPixel="1512"/>
-</editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="LIS3DSH.h" partName="LIS3DSH.h" path="D:/Diplomatura en Sistemas Embebidos/diplomatura/clase 17/clase 15/TP4-Interrupciones-Timer-y-Boton/LIS3DSH.h" title="LIS3DSH.h" tooltip="D:/Diplomatura en Sistemas Embebidos/diplomatura/clase 17/clase 15/TP4-Interrupciones-Timer-y-Boton/LIS3DSH.h" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/TP4-Interrupciones-Timer-y-Boton/LIS3DSH.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="188"/>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="startup_stm32f4xx.c" partName="startup_stm32f4xx.c" path="H:/diplomatura/clase 17/clase 15/TP4-Interrupciones-Timer-y-Boton/cmsis_boot/startup/startup_stm32f4xx.c" title="startup_stm32f4xx.c" tooltip="H:/diplomatura/clase 17/clase 15/TP4-Interrupciones-Timer-y-Boton/cmsis_boot/startup/startup_stm32f4xx.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/TP4-Interrupciones-Timer-y-Boton/cmsis_boot/startup/startup_stm32f4xx.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="14795" selectionTopPixel="3885"/>
 </editor>
 </editors>
 <views>
@@ -57,9 +47,11 @@
 <expanded>
 <element path="/TP4-Interrupciones-Timer-y-Boton"/>
 <element path="/TP4-Interrupciones-Timer-y-Boton/bsp"/>
+<element path="/TP4-Interrupciones-Timer-y-Boton/cmsis_lib"/>
+<element path="/TP4-Interrupciones-Timer-y-Boton/cmsis_lib/include"/>
 </expanded>
 <selection>
-<element path="/TP4-Interrupciones-Timer-y-Boton/LIS3DSH.h"/>
+<element path="/TP4-Interrupciones-Timer-y-Boton/bsp/bsp.c"/>
 </selection>
 </viewState>
 </view>
@@ -79,6 +71,9 @@
 <view id="org.eclipse.ui.console.ConsoleView" partName="Console">
 <viewState/>
 </view>
+<view id="org.eclipse.debug.ui.BreakpointView" partName="Breakpoints">
+<viewState/>
+</view>
 <view id="org.eclipse.debug.ui.VariableView" partName="Variables">
 <viewState/>
 </view>
@@ -89,7 +84,7 @@
 <viewState/>
 </view>
 </views>
-<perspectives activePart="org.eclipse.cdt.ui.editor.CEditor" activePerspective="org.coocox.builder.perspective.CoBuilder">
+<perspectives activePart="org.eclipse.ui.console.ConsoleView" activePerspective="org.coocox.builder.perspective.CoBuilder">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.coocox.builder.ui.PerspectiveCoBuilder" id="org.coocox.builder.perspective.CoBuilder" label="CooCox CoBuilder"/>
 <alwaysOnActionSet id="org.coocox.component.ui.actionSet"/>
@@ -125,6 +120,7 @@
 <view id="org.eclipse.debug.ui.ExpressionView"/>
 <view id="org.coocox.component.ui.Help"/>
 <view id="org.eclipse.ui.views.ContentOutline"/>
+<view id="org.eclipse.debug.ui.BreakpointView"/>
 <fastViewBars>
 <fastViewBar fastViewLocation="16384" id="org.eclipse.ui.internal.ViewStack@1341cac" orientation="512" selectedTabId="org.coocox.component.ui.ComponentView" style="0">
 <fastViews>
@@ -160,15 +156,16 @@
 </info>
 <info part="org.coocox.builder.ui.exampleView" ratio="0.1498494" ratioLeft="199" ratioRight="1129" relationship="2" relative="org.eclipse.ui.internal.ViewStack@1341cac"/>
 <info folder="true" part="org.eclipse.ui.internal.ViewStack@7e7d2f" ratio="0.7072072" ratioLeft="471" ratioRight="195" relationship="2" relative="org.coocox.builder.ui.exampleView">
-<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
+<folder activePageID="org.eclipse.debug.ui.BreakpointView" appearance="2" expanded="2">
 <page content="org.coocox.component.ui.Help" label="Help"/>
 <page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
-<page content="org.eclipse.debug.ui.BreakpointView" label="LabelNotFound"/>
+<page content="org.eclipse.debug.ui.BreakpointView" label="Breakpoints"/>
 <page content="org.coocox.coassistant.view.CoAssistantView" label="LabelNotFound"/>
 <page content="org.coocox.builder.ui.MoreExampleView" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
 <part id="1"/>
+<part id="2"/>
 </presentation>
 </folder>
 </info>
@@ -280,167 +277,158 @@
 <navigationHistory>
 <editors>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/TP4-Interrupciones-Timer-y-Boton/main.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/TP4-Interrupciones-Timer-y-Boton/bsp/bsp.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/TP4-Interrupciones-Timer-y-Boton/bsp/bsp.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/TP4-Interrupciones-Timer-y-Boton/cmsis_boot/stm32f4xx.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/TP4-Interrupciones-Timer-y-Boton/LIS3DSH.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/TP4-Interrupciones-Timer-y-Boton/bsp/bsp.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/TP4-Interrupciones-Timer-y-Boton/bsp/bsp.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/TP4-Interrupciones-Timer-y-Boton/LIS3DSH.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/TP4-Interrupciones-Timer-y-Boton/LIS3DSH.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/TP4-Interrupciones-Timer-y-Boton/LIS3DSH.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/TP4-Interrupciones-Timer-y-Boton/bsp/bsp.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/TP4-Interrupciones-Timer-y-Boton/bsp/bsp.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/TP4-Interrupciones-Timer-y-Boton/cmsis_boot/startup/startup_stm32f4xx.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/TP4-Interrupciones-Timer-y-Boton/main.c"/>
 </editors>
 <item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1311" y="0"/>
+<position info="not_deleted" x="1320" y="0"/>
 </item>
 <item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1340" y="0"/>
+<position info="not_deleted" x="1409" y="0"/>
 </item>
 <item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1311" y="0"/>
+<position info="not_deleted" x="1441" y="0"/>
 </item>
 <item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1340" y="0"/>
+<position info="not_deleted" x="1474" y="0"/>
 </item>
 <item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1311" y="0"/>
+<position info="not_deleted" x="1291" y="0"/>
 </item>
 <item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1340" y="0"/>
+<position info="not_deleted" x="1320" y="0"/>
 </item>
 <item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1311" y="0"/>
+<position info="not_deleted" x="1409" y="0"/>
 </item>
 <item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1340" y="0"/>
+<position info="not_deleted" x="1441" y="0"/>
 </item>
 <item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1311" y="0"/>
+<position info="not_deleted" x="1474" y="0"/>
 </item>
 <item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1340" y="0"/>
+<position info="not_deleted" x="1291" y="0"/>
 </item>
 <item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1311" y="0"/>
+<position info="not_deleted" x="1320" y="0"/>
 </item>
 <item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1340" y="0"/>
+<position info="not_deleted" x="1409" y="0"/>
 </item>
 <item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1311" y="0"/>
+<position info="not_deleted" x="1441" y="0"/>
 </item>
 <item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1340" y="0"/>
+<position info="not_deleted" x="1474" y="0"/>
 </item>
 <item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1311" y="0"/>
+<position info="not_deleted" x="1291" y="0"/>
 </item>
 <item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1340" y="0"/>
+<position info="not_deleted" x="1320" y="0"/>
 </item>
 <item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1311" y="0"/>
+<position info="not_deleted" x="1409" y="0"/>
 </item>
 <item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1039" y="0"/>
-</item>
-<item historyLabel="bsp.c" index="1">
-<position info="not_deleted" x="2853" y="0"/>
+<position info="not_deleted" x="1441" y="0"/>
 </item>
 <item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1039" y="0"/>
-</item>
-<item historyLabel="bsp.h" index="2">
-<position info="not_deleted" x="472" y="0"/>
-</item>
-<item historyLabel="bsp.c" index="1">
-<position info="not_deleted" x="838" y="0"/>
-</item>
-<item historyLabel="stm32f4xx.h" index="3">
-<position info="not_deleted" x="53976" y="4"/>
+<position info="not_deleted" x="1474" y="0"/>
 </item>
 <item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1039" y="0"/>
-</item>
-<item historyLabel="LIS3DSH.c" index="4">
-<position info="not_deleted" x="3572" y="0"/>
+<position info="not_deleted" x="1291" y="0"/>
 </item>
 <item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1016" y="0"/>
-</item>
-<item historyLabel="bsp.h" index="5">
-<position info="not_deleted" x="0" y="0"/>
+<position info="not_deleted" x="1320" y="0"/>
 </item>
 <item historyLabel="main.c" index="0">
-<position info="not_deleted" x="32" y="0"/>
-</item>
-<item historyLabel="bsp.h" index="5">
-<position info="not_deleted" x="0" y="0"/>
+<position info="not_deleted" x="1409" y="0"/>
 </item>
 <item historyLabel="main.c" index="0">
-<position info="not_deleted" x="36" y="0"/>
-</item>
-<item historyLabel="bsp.h" index="5">
-<position info="not_deleted" x="0" y="0"/>
+<position info="not_deleted" x="1441" y="0"/>
 </item>
 <item historyLabel="main.c" index="0">
-<position info="not_deleted" x="36" y="0"/>
-</item>
-<item historyLabel="bsp.h" index="5">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="bsp.c" index="6">
-<position info="not_deleted" x="465" y="0"/>
-</item>
-<item historyLabel="LIS3DSH.c" index="7">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="LIS3DSH.h" index="8">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="bsp.c" index="6">
-<position info="not_deleted" x="465" y="0"/>
-</item>
-<item historyLabel="LIS3DSH.c" index="7">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="LIS3DSH.c" index="7">
-<position info="not_deleted" x="3735" y="0"/>
-</item>
-<item historyLabel="LIS3DSH.c" index="7">
-<position info="not_deleted" x="3572" y="0"/>
+<position info="not_deleted" x="1474" y="0"/>
 </item>
 <item historyLabel="main.c" index="0">
-<position info="not_deleted" x="36" y="0"/>
-</item>
-<item historyLabel="bsp.c" index="6">
-<position info="not_deleted" x="465" y="0"/>
-</item>
-<item historyLabel="LIS3DSH.c" index="7">
-<position info="not_deleted" x="3572" y="0"/>
-</item>
-<item historyLabel="LIS3DSH.h" index="8">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="bsp.h" index="5">
-<position info="not_deleted" x="0" y="0"/>
+<position info="not_deleted" x="1291" y="0"/>
 </item>
 <item historyLabel="main.c" index="0">
-<position info="not_deleted" x="36" y="0"/>
+<position info="not_deleted" x="1320" y="0"/>
 </item>
-<item historyLabel="LIS3DSH.c" index="9">
-<position info="not_deleted" x="3572" y="0"/>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="1409" y="0"/>
 </item>
-<item historyLabel="bsp.c" index="10">
-<position info="not_deleted" x="465" y="0"/>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="1441" y="0"/>
 </item>
-<item historyLabel="bsp.h" index="11">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="1474" y="0"/>
 </item>
-<item active="true" historyLabel="main.c" index="0">
-<position info="not_deleted" x="36" y="0"/>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="1291" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="1320" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="1409" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="1441" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="1474" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="1291" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="1320" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="1409" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="1441" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="1474" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="1291" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="1320" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="1409" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="1441" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="1474" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="1291" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="1441" y="0"/>
+</item>
+<item historyLabel="startup_stm32f4xx.c" index="1">
+<position info="not_deleted" x="14795" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="1870" y="0"/>
+</item>
+<item historyLabel="startup_stm32f4xx.c" index="1">
+<position info="not_deleted" x="14795" y="0"/>
+</item>
+<item active="true" historyLabel="main.c" index="2">
+<position info="not_deleted" x="1870" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -491,8 +479,8 @@
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" tooltip="TP4-Interrupciones-Timer-y-Boton/main.c">
 <persistable path="/TP4-Interrupciones-Timer-y-Boton/main.c"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx_tim.c" tooltip="TP4-Interrupciones-Timer-y-Boton/cmsis_lib/source/stm32f4xx_tim.c">
-<persistable path="/TP4-Interrupciones-Timer-y-Boton/cmsis_lib/source/stm32f4xx_tim.c"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" tooltip="TP4-Interrupciones-Timer-y-Boton/main.c">
+<persistable path="/TP4-Interrupciones-Timer-y-Boton/main.c"/>
 </file>
 </mruList>
 </workbench>

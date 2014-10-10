@@ -43,4 +43,6 @@ void led_setBright(uint8_t led, uint8_t value);
 
 float bsp_get_acc(char eje);
 
+uint16_t bsp_get_pote();
+
 #endif
